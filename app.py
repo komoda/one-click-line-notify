@@ -1,15 +1,10 @@
 # coding=UTF-8
 from __future__ import unicode_literals
 
-from flask import Flask, render_template, request
-from flask import json, jsonify
+from flask import Flask
 
-from datetime import datetime
-import time
-import os
 import pprint
 
-import random
 import json
 import requests
 
@@ -18,8 +13,6 @@ import requests
 #------
 
 app = Flask(__name__)
-CORS(app)
-
 
 @app.route('/')
 def homepage():
